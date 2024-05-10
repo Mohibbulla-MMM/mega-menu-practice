@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .active {
+    @apply text-amber-600 border-b-2 border-amber-800 px-1 block;
+  }
+}
+@layer base {
+  .inactive {
+    @apply text-amber-800 px-1 border-none block;
+  }
+}
+
+@layer base {
+  .inactive:hover,
+  .active:hover {
+    @apply text-amber-50 bg-amber-800;
+  }
+}
+
+@layer base {
+  .category-btn {
+    @apply text-amber-800 px-1 block cursor-pointer;
+  }
+}
+@layer base {
+  .category-btn:hover {
+    @apply text-amber-50   bg-amber-800;
+  }
+}
